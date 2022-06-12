@@ -6,6 +6,7 @@
 
 void plotResult(int inArray[9][9], int outArray[9][9], bool isSearch) {
 	HANDLE hConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsoleHandle, FOREGROUND_INTENSITY);
 	size_t N = 9;
 	if (isSearch)
 		std::cout << std::endl << "solution found :)" << std::endl;
