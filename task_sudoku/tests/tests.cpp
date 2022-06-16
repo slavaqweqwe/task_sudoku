@@ -3,6 +3,9 @@
 
 #include <gtest/gtest.h>
 #include "task_sudoku.h"
+#include <iostream>
+#include <windows.h>
+
 
 void plotResult(int inArray[9][9], int outArray[9][9], bool isSearch) {
 	HANDLE hConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
